@@ -1,4 +1,4 @@
-# FbxSdkSample
+# fbx_sdk_python_sample
 This project is a sample program of FBX SDK Python Bindings.
 
 
