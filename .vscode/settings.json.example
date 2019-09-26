@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "path to your Python 2.7",
+    "python.linting.pylintPath": "path to your pylint",
+}
