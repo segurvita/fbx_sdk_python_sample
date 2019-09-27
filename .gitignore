@@ -106,3 +106,4 @@ venv.bak/
 # custom
 .vscode/settings.json
 !*.obj
+/Pipfile.lock
