@@ -14,3 +14,9 @@ cd sample01
 # run sample01
 python sample01.py cube.obj cube.fbx
 ```
+
+If you have already installed Docker, the following command will work as well.
+
+```bash
+docker-compose up
+```
