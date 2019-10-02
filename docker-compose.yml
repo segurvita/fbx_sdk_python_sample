@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python-fbx-sample01:
+    image: lerignoux/python-fbx
+    volumes:
+      - ./sample01:/src/sample01
+    working_dir: /src/sample01
+    command: python sample01.py cube.obj cube.fbx
