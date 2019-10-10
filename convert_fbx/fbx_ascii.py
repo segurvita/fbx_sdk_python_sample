@@ -2,6 +2,17 @@ import sys
 from fbx import *
 
 
+def get_ascii_format_id(manager):
+    # Search file format ID of ASCII
+    for formatId in range(manager.GetIOPluginRegistry().GetWriterFormatCount()):
+        if manager.GetIOPluginRegistry().WriterIsFBX(formatId):
+            if "ascii" in manager.GetIOPluginRegistry().GetWriterFormatDescription(formatId):
+                return formatId
+        
+    # Default format is auto
+    return -1    
+
+
 def main(obj_path, fbx_path):
     # Create
     manager = FbxManager.Create()
@@ -13,18 +24,8 @@ def main(obj_path, fbx_path):
     importer.Initialize(obj_path, -1)
     importer.Import(scene)
 
-    # Default format is auto
-    fileFormat = -1
-
-    # Search file format ID of ASCII
-    for formatId in range(manager.GetIOPluginRegistry().GetWriterFormatCount()):
-        if manager.GetIOPluginRegistry().WriterIsFBX(formatId):
-            if "ascii" in manager.GetIOPluginRegistry().GetWriterFormatDescription(formatId):
-                fileFormat = formatId
-                break
-
     # Export the scene to the file.
-    exporter.Initialize(fbx_path, fileFormat)
+    exporter.Initialize(fbx_path, get_ascii_format_id(manager))
     exporter.Export(scene)
 
     # Destroy
