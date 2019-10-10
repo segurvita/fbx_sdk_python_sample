@@ -7,7 +7,7 @@ FBX SDK Python Bindingsのサンプルプログラムです。
 
 ## obj を FBX バイナリ形式 に変換する
 
-以下のコードで、 `cube.obj` を `cube_binary.fbx` (FBX バイナリ形式) に変換できます。
+以下のコマンドで、 `cube.obj` を `cube_binary.fbx` (FBX バイナリ形式) に変換できます。
 
 ```bash
 python convert_fbx/fbx_binary.py resources/cube.obj resources/cube_binary.fbx
@@ -23,7 +23,7 @@ docker-compose run convert-fbx-binary
 
 ## FBX binary を FBX ASCII 形式に変換する
 
-以下のコードで、 `cube_binary.fbx` を `cube_ascii.fbx` (FBX ASCII 形式) に変換できます。
+以下のコマンドで、 `cube_binary.fbx` を `cube_ascii.fbx` (FBX ASCII 形式) に変換できます。
 
 ```bash
 python convert_fbx/fbx_ascii.py resources/cube_binary.fbx resources/cube_ascii.fbx
