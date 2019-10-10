@@ -1,8 +1,9 @@
 version: '3'
 services:
-  python-fbx-sample01:
-    image: lerignoux/python-fbx
+  convert-fbx-binary:
+    image: lerignoux/python-fbx:latest
     volumes:
-      - ./sample01:/src/sample01
-    working_dir: /src/sample01
-    command: python sample01.py cube.obj cube.fbx
+      - ./resources:/src/resources
+      - ./convert_fbx:/src/convert_fbx
+    working_dir: /src
+    command: python convert_fbx/fbx_binary.py resources/cube.obj resources/cube_binary.fbx
