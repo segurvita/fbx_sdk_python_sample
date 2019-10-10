@@ -16,3 +16,19 @@ If you have already installed Docker, the following command will work as well.
 ```bash
 docker-compose run convert-fbx-binary
 ```
+
+
+
+## Convert FBX binary to FBX ascii
+
+You can convert `cube_binary.fbx` to `cube_ascii.fbx` (FBX ASCII format) with the following code.
+
+```bash
+python convert_fbx/fbx_ascii.py resources/cube_binary.fbx resources/cube_ascii.fbx
+```
+
+If you have already installed Docker, the following command will work as well.
+
+```bash
+docker-compose run convert-fbx-ascii
+```
