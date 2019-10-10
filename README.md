@@ -32,3 +32,8 @@ If you have already installed Docker, the following command will work as well.
 ```bash
 docker-compose run convert-fbx-ascii
 ```
+
+
+
+# Licensing
+The FBX SDK is under Autodesk Licence.
