@@ -3,20 +3,16 @@ This project is a sample program of FBX SDK Python Bindings.
 
 
 
-## Sample01
+## Convert obj to FBX binary
 
-You can convert `cube.obj` to `cube.fbx` with the following code.
+You can convert `cube.obj` to `cube_binary.fbx` (FBX binary format) with the following code.
 
 ```bash
-# change directory
-cd sample01
-
-# run sample01
-python sample01.py cube.obj cube.fbx
+python convert_fbx/fbx_binary.py resources/cube.obj resources/cube_binary.fbx
 ```
 
 If you have already installed Docker, the following command will work as well.
 
 ```bash
-docker-compose up
+docker-compose run convert-fbx-binary
 ```
