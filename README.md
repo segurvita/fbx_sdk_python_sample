@@ -1,4 +1,6 @@
 # fbx_sdk_python_sample
+<div style="text-align:right">Language: <i>English</i> | <a href="README_JA.md">日本語</a></div>
+
 This project is a sample program of FBX SDK Python Bindings.
 
 
@@ -19,7 +21,7 @@ docker-compose run convert-fbx-binary
 
 
 
-## Convert FBX binary to FBX ascii
+## Convert FBX binary to FBX ASCII
 
 You can convert `cube_binary.fbx` to `cube_ascii.fbx` (FBX ASCII format) with the following code.
 
@@ -36,4 +38,4 @@ docker-compose run convert-fbx-ascii
 
 
 # Licensing
-The FBX SDK is under Autodesk Licence.
+The FBX SDK is under Autodesk License.
