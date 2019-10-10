@@ -7,3 +7,11 @@ services:
       - ./convert_fbx:/src/convert_fbx
     working_dir: /src
     command: python convert_fbx/fbx_binary.py resources/cube.obj resources/cube_binary.fbx
+
+  convert-fbx-ascii:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./convert_fbx:/src/convert_fbx
+    working_dir: /src
+    command: python convert_fbx/fbx_ascii.py resources/cube_binary.fbx resources/cube_ascii.fbx
