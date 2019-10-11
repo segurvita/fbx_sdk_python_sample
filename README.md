@@ -3,7 +3,16 @@
 
 This project is a sample program of FBX SDK Python Bindings.
 
+# Build Setup
 
+When using Docker, [lerignoux/python-fbx](https://hub.docker.com/r/lerignoux/python-fbx) is used, so no special installation is required.
+
+If you do not use Docker, please install Python and FBX SDK Python 2019.x.
+[FBX SDK Python Official Website](http://help.autodesk.com/view/FBX/2019/ENU/?guid=FBX_Developer_Help_scripting_with_python_fbx_installing_python_fbx_html)
+
+
+
+# Usage
 
 ## Convert obj to FBX binary
 
