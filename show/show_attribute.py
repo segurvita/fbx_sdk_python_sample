@@ -1,3 +1,8 @@
+"""
+This code was based on the following website.
+https://help.autodesk.com/view/FBX/2019/ENU/?guid=FBX_Developer_Help_getting_started_your_first_fbx_sdk_program_html
+"""
+
 import sys
 from fbx import *
 
