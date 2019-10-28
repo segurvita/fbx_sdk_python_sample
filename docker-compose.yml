@@ -19,10 +19,9 @@ services:
   list-format:
     image: lerignoux/python-fbx:latest
     volumes:
-      - ./resources:/src/resources
-      - ./convert_fbx:/src/convert_fbx
+      - ./show:/src/show
     working_dir: /src
-    command: python convert_fbx/list_format.py
+    command: python show/list_format.py
 
   show-attribute:
     image: lerignoux/python-fbx:latest

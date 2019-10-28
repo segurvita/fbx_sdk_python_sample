@@ -49,7 +49,7 @@ docker-compose run convert-fbx-ascii
 
 
 
-## Show fbx contents in an xml format to stdout.
+## Show fbx contents in an xml format to stdout
 
 You can print `cube_binary.fbx` in an xml format to stdout with the following command.
 
