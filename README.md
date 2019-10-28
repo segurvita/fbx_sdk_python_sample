@@ -49,5 +49,21 @@ docker-compose run convert-fbx-ascii
 
 
 
+## Show fbx contents in an xml format to stdout.
+
+You can print `cube_binary.fbx` in an xml format to stdout with the following command.
+
+```bash
+python show/show_attribute.py resources/cube_binary.fbx
+```
+
+If you have already installed Docker, the following command will work as well.
+
+```bash
+docker-compose run show-attribute
+```
+
+
+
 # License
 The FBX SDK is under Autodesk License.

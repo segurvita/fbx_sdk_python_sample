@@ -22,4 +22,12 @@ services:
       - ./resources:/src/resources
       - ./convert_fbx:/src/convert_fbx
     working_dir: /src
-    command: python convert_fbx/list_format.py 
+    command: python convert_fbx/list_format.py
+
+  show-attribute:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./show:/src/show
+    working_dir: /src
+    command: python show/show_attribute.py resources/cube_binary.fbx
