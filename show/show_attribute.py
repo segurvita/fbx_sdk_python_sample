@@ -88,7 +88,7 @@ def print_attribute(attribute):
     )
 
 
-def PrintNode(node):
+def print_node(node):
     """
     Print a node, its attributes, and all its children recursively.
     """
@@ -126,7 +126,7 @@ def PrintNode(node):
 
     # Recursively Print the children.
     for j in range(node.GetChildCount()):
-        PrintNode(node.GetChild(j))
+        print_node(node.GetChild(j))
 
     num_tabs -= 1
     print_tabs()
@@ -141,7 +141,7 @@ def main(file_name):
 
     # Create
     manager = FbxManager.Create()
-    scene = FbxScene.Create(manager, "fbxscene")
+    scene = FbxScene.Create(manager, "fbxScene")
     importer = FbxImporter.Create(manager, "")
 
     # Use the first argument as the filename for the importer.
@@ -165,7 +165,7 @@ def main(file_name):
     root_node = scene.GetRootNode()
     if(root_node):
         for i in range(root_node.GetChildCount()):
-            PrintNode(root_node.GetChild(i))
+            print_node(root_node.GetChild(i))
 
     # Destroy the SDK manager and all the other objects it was handling.
     manager.Destroy()
@@ -177,6 +177,6 @@ if __name__ == '__main__':
     args = sys.argv
 
     if len(args) < 2:
-        sys.stdout.write('Atguments are too short\n')
+        sys.stdout.write('Arguments are too short\n')
     else:
         main(args[1])

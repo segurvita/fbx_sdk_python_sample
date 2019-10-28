@@ -18,7 +18,7 @@ def list_reader_format(manager):
 def main():
     # Create
     manager = FbxManager.Create()
-    scene = FbxScene.Create(manager, "fbxscene")
+    scene = FbxScene.Create(manager, "fbxScene")
 
     # List
     list_writer_format(manager)

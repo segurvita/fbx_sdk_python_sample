@@ -16,7 +16,7 @@ def get_ascii_format_id(manager):
 def main(obj_path, fbx_path):
     # Create
     manager = FbxManager.Create()
-    scene = FbxScene.Create(manager, "fbxscene")
+    scene = FbxScene.Create(manager, "fbxScene")
     importer = FbxImporter.Create(manager, "")
     exporter = FbxExporter.Create(manager, "")
 
@@ -41,6 +41,6 @@ if __name__ == '__main__':
     args = sys.argv
 
     if len(args) < 2:
-        print('Atguments are too short')
+        print('Arguments are too short')
     else:
         main(args[1], args[2])
