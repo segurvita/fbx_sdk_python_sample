@@ -38,3 +38,11 @@ services:
       - ./generate_fbx:/src/generate_fbx
     working_dir: /src
     command: python generate_fbx/camera_anim.py resources/camera_anim_ascii.fbx
+
+  large-cube:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./generate_fbx:/src/generate_fbx
+    working_dir: /src
+    command: python generate_fbx/large_cube.py resources/large_cube.fbx
