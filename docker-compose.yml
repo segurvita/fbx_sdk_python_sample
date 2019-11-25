@@ -30,3 +30,11 @@ services:
       - ./show:/src/show
     working_dir: /src
     command: python show/show_attribute.py resources/cube_binary.fbx
+
+  extract-anim:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./show:/src/show
+    working_dir: /src
+    command: python show/extract_anim.py resources/cube_binary.fbx
