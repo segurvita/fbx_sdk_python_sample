@@ -7,11 +7,11 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2019
-		Month: 10
-		Day: 10
-		Hour: 7
-		Minute: 33
-		Second: 29
+		Month: 11
+		Day: 25
+		Hour: 12
+		Minute: 13
+		Second: 0
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins version 2019.2"
@@ -75,7 +75,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 94392783357120, "fbxscene", "Scene" {
+	Document: 94153552556384, "fbxScene", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -225,7 +225,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 94392784553024, "Geometry::", "Mesh" {
+	Geometry: 94153553646656, "Geometry::", "Mesh" {
 		Vertices: *24 {
 			a: -0.5,-0.5,-0.5,0.5,-0.5,-0.5,-0.5,0.5,-0.5,0.5,0.5,-0.5,-0.5,-0.5,0.5,0.5,-0.5,0.5,-0.5,0.5,0.5,0.5,0.5,0.5
 		} 
@@ -254,7 +254,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 94392784535840, "Model::cube_root", "Null" {
+	Model: 94153553629472, "Model::cube_root", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -262,7 +262,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 94392784539424, "Model::cube", "Mesh" {
+	Model: 94153553633056, "Model::cube", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -271,7 +271,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Material: 94392784551200, "Material::cubeMat", "" {
+	Material: 94153553644832, "Material::cubeMat", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -293,16 +293,16 @@ Objects:  {
 Connections:  {
 	
 	;Model::cube_root, Model::RootNode
-	C: "OO",94392784535840,0
+	C: "OO",94153553629472,0
 	
 	;Model::cube, Model::cube_root
-	C: "OO",94392784539424,94392784535840
+	C: "OO",94153553633056,94153553629472
 	
 	;Geometry::, Model::cube
-	C: "OO",94392784553024,94392784539424
+	C: "OO",94153553646656,94153553633056
 	
 	;Material::cubeMat, Model::cube
-	C: "OO",94392784551200,94392784539424
+	C: "OO",94153553644832,94153553633056
 }
 ;Takes section
 ;----------------------------------------------------
