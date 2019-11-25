@@ -30,3 +30,11 @@ services:
       - ./show:/src/show
     working_dir: /src
     command: python show/show_attribute.py resources/cube_binary.fbx
+
+  generate-camera-anim:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./generate_fbx:/src/generate_fbx
+    working_dir: /src
+    command: python generate_fbx/camera_anim.py resources/camera_anim_ascii.fbx
