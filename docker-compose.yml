@@ -46,3 +46,11 @@ services:
       - ./generate_fbx:/src/generate_fbx
     working_dir: /src
     command: python generate_fbx/generate_anim.py resources/cube_ascii.fbx resources/moving_cube_ascii.fbx
+
+  moving-circle-cube:
+    image: lerignoux/python-fbx:latest
+    volumes:
+      - ./resources:/src/resources
+      - ./generate_fbx:/src/generate_fbx
+    working_dir: /src
+    command: python generate_fbx/circle_anim.py resources/cube_ascii.fbx resources/moving_circle_cube_ascii.fbx
